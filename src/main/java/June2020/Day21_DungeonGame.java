@@ -16,7 +16,7 @@ public class Day21_DungeonGame {
 
         for (int i = n - 1; i >= 0; i--) {
             for (int j = m - 1; j >= 0; j--) {
-                int health = 0;
+                int health;
                 if (i + 1 == n && j + 1 == m) {
                     health = Math.max(1 - dungeon[i][j], 1);
                 } else if (i + 1 == n) {
