@@ -1,3 +1,4 @@
+import leetcode.TreeNode
 import kotlin.math.max
 
 fun main() {
@@ -21,7 +22,7 @@ private fun getMaxLength(node: TreeNode?): Int {
     return if (node == null) 0 else 1 + max(getMaxLength(node.left), getMaxLength(node.right))
 }
 
-internal class TreeNode internal constructor(var value: Int) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
-}
+/*internal class leetcode.TreeNode internal constructor(var value: Int) {
+    var left: leetcode.TreeNode? = null
+    var right: leetcode.TreeNode? = null
+}*/
