@@ -1,6 +1,4 @@
-
 import java.util.*
-
 
 fun main() {
     var prerequisites = arrayOf(
