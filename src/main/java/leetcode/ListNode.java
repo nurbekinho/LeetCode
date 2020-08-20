@@ -6,4 +6,11 @@ public class ListNode {
     public ListNode(int x) {
         val = x;
     }
+
+    public static void printElements(ListNode node) {
+        while (node != null) {
+            System.out.print(node.val + " ");
+            node = node.next;
+        }
+    }
 }
