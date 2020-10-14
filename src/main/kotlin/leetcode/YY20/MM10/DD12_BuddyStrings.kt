@@ -22,13 +22,3 @@ fun buddyStrings(A: String, B: String): Boolean {
 
     return d.size == 2 && (A[d[0]] == B[d[1]] && B[d[0]] == A[d[1]])
 }
-
-/*
-    List<Integer> diff = new ArrayList<>();
-    for(int i=0;i<A.length();i++) {
-        if(A.charAt(i)!=B.charAt(i))
-            diff.add(i);
-    }
-    return diff.size()==2 && (A.charAt(diff.get(0)) == B.charAt(diff.get(1))  &&
-                              B.charAt(diff.get(0)) == A.charAt(diff.get(1)));
- */
