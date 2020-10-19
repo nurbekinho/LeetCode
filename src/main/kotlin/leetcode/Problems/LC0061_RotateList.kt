@@ -9,10 +9,10 @@ fun rotateRight(head: ListNode?, k: Int): ListNode? {
     var temp = head
     while (temp!!.next != null) {
         size++
-        temp = temp!!.next
+        temp = temp.next
     }
 
-    temp!!.next = head
+    temp.next = head
     val r = k % size
 
     for (i in 0 until size - r) {
@@ -20,7 +20,7 @@ fun rotateRight(head: ListNode?, k: Int): ListNode? {
     }
 
     val newHead = temp!!.next;
-    temp!!.next = null;
+    temp.next = null;
 
     return newHead;
 }
