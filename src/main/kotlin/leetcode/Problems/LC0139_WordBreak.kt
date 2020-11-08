@@ -2,6 +2,7 @@ fun main() {
     println(wordBreak("leetcode", listOf("leet", "code")))
     println(wordBreak("applepenapple", listOf("apple", "pen")))
     println(wordBreak("applepenapplepencil", listOf("apple", "pen", "pencil")))
+    println(wordBreak("asdfasdfasdfasdf", listOf("sdfg")))
 }
 
 fun wordBreak(s: String, wordDict: List<String>): Boolean {
