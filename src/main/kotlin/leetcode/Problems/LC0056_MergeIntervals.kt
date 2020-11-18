@@ -22,21 +22,3 @@ fun merge(intervals: Array<IntArray>): Array<IntArray> {
 
     return result.toTypedArray()
 }
-
-/*
-if(intervals == null || intervals.length == 0)
-    return intervals;
-List<int[]> ret = new ArrayList<>();
-Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
-int i = 0, idx = 0, curr[] = intervals[0];
-while(i < intervals.length){
-    while(i < intervals.length && intervals[i][0] <= curr[1])
-        curr[1] = Math.max(curr[1], intervals[i++][1]);
-    ret.add(curr);
-    curr =  i < intervals.length ? intervals[i]: new int[]{};
-}
-int result[][] = new int[ret.size()][2];
-for(int[] arr : ret)
-    result[idx++] = arr;
-return result;
- */
