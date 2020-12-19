@@ -1,3 +1,5 @@
+package leetcode.Problems
+
 fun main() {
     var obj = MyHashSet()
     obj.add(1)
