@@ -1,3 +1,5 @@
+package leetcode.Problems
+
 import java.util.*
 
 fun main() {
