@@ -4,18 +4,6 @@ fun main() {
 }
 
 fun mincostTickets(days: IntArray, costs: IntArray): Int {
-    /*val dp = IntArray(days.size + 1)
-    var d7 = -1
-    var d30 = -1
-    for (i in 1..days.size) {
-        while (d7 < days.size - 1 && days[d7 + 1] <= days[i - 1] - 7) d7++
-        while (d30 < days.size - 1 && days[d30 + 1] <= days[i - 1] - 30) d30++
-
-        dp[i] = min(dp[i - 1] + costs[0], min(dp[d7 + 1] + costs[1], dp[d30 + 1] + costs[2]))
-    }
-
-    return dp[dp.size - 1]*/
-
     val dp = IntArray(366)
     var day = 0
     for (i in 1..dp.lastIndex) {
